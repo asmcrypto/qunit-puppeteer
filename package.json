@@ -1,6 +1,6 @@
 {
   "name": "qunit-puppeteer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A test harness for running QUnit tests in headless Chromium",
   "bin": {
     "qunit-puppeteer": "bin/qunit-puppeteer.js"

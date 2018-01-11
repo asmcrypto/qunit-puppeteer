@@ -14,6 +14,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   const browser = await puppeteer.launch();
+  browser.on('disconnected', () => { throw new Error('Chrome crashed'); });
   const page = await browser.newPage();
 
   // Attach to browser console log events, and log to node console
